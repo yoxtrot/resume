@@ -43,7 +43,7 @@ function App() {
                               <li>Most likely to be found
                                   riding a mountain bike
                                   deep in the mountains
-                                  distantly pursued by my
+                                  distantly pursued by his
                                   dogs, Solo & Ron</li>
                               <li>Avid Lego enthusiast</li>
                               <li>Endlessly pursuing
