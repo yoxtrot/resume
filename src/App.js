@@ -152,6 +152,7 @@ const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  flex-wrap: wrap;
 `
 
 const ColumnItem = styled.div`
@@ -177,19 +178,24 @@ const Breaker = styled.div`
 const LeftCol = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
+  @media only screen and (min-width: 600px) {
+    width: 35%;
+  }
   align-items: flex-start;
 `
 const RightCol = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  @media only screen and (min-width: 600px) {
+    width: 55%;
+  }
   align-items: flex-start;
 `
 
 const BodyContainer = styled.div`
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 `
 
 const HeaderSection = styled.div`
