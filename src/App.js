@@ -14,7 +14,7 @@ function App() {
               </HeaderSection>
               <BodyContainer>
                   <LeftCol>
-                      <div>
+                      <ColumnItem>
                           <Typography variant={"h5"} fontWeight={"bolder"}>Skills</Typography>
                           <Breaker/>
                           <StyledList>
@@ -28,15 +28,15 @@ function App() {
                               <li>A.I. training interface design</li>
                               <li>NodeJS</li>
                           </StyledList>
-                      </div>
-                      <div>
+                      </ColumnItem>
+                      <ColumnItem>
                           <Typography variant={"h5"} fontWeight={"bolder"}>Education</Typography>
                           <Breaker/>
-                          <Typography variant={"h6"} fontWeight={"bold"}>2016 | B.A.</Typography>
+                          <Typography marginTop={"1em"} variant={"h6"} fontWeight={"bold"}>2016 | B.A.</Typography>
                           <Typography variant={"h6"} fontWeight={"bold"}><Highlight>COMPUTER SCIENCE</Highlight></Typography>
                           <Typography variant={"h6"}>SUNY PolyTechnic</Typography>
-                      </div>
-                      <div>
+                      </ColumnItem>
+                      <ColumnItem>
                           <Typography variant={"h5"} fontWeight={"bolder"}>Hobbies</Typography>
                           <Breaker/>
                           <StyledList>
@@ -51,7 +51,7 @@ function App() {
                                   through extensive car
                                   modification</li>
                           </StyledList>
-                      </div>
+                      </ColumnItem>
                   </LeftCol>
                   <RightCol>
                       <Typography variant={"h5"} fontWeight={"bolder"}>Experience</Typography>
@@ -134,11 +134,12 @@ function App() {
   );
 }
 
-// JUNE 2015 – AUGUST 2017
-// WEB DEVELOPER
-// NORTHERN SAFETY CO. INC. | FRANKFORT, NY
-// • Created responsive refactors of legacy code using Typescript, ASP.NET
-// MVC, and AngularJS
+const ColumnItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  align-items: flex-start;
+`
 
 const StyledList = styled.ul`
   display: flex;
@@ -168,6 +169,7 @@ const RightCol = styled.div`
 
 const BodyContainer = styled.div`
   display: flex;
+  gap: 10px;
 `
 
 const HeaderSection = styled.div`
