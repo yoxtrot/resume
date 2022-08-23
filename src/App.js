@@ -5,8 +5,8 @@ import styled from "@emotion/styled"
 function App() {
   return (
     <div className="App">
-      <Container fixed>
-          <Paper elevation={3} sx={{padding: "20px"}}>
+      <Container fixed >
+          <Paper elevation={3} sx={{padding: "20px", border: "solid black 4px", margin: "20px"}}>
               <HeaderSection>
                   <Typography variant={"h2"} fontWeight={"bold"}>Hello.</Typography>
                   <Typography variant={"h2"} fontWeight={"bold"}>I'm <Highlight>Forest Yox</Highlight>.</Typography>
@@ -56,7 +56,7 @@ function App() {
                   <RightCol>
                       <Typography variant={"h5"} fontWeight={"bolder"}>Experience</Typography>
                       <Breaker />
-                      <Card sx={{marginTop: "20px"}}>
+                      <Card sx={{marginTop: "20px", width: "100%"}}>
                           <CardContent sx={{textAlign: "left"}}>
                               <Typography variant={"h6"} fontWeight={"bold"}>MARCH 2022 – PRESENT</Typography>
                               <Typography variant={"h6"} fontWeight={"bold"}><Highlight>SR. SOFTWARE ENGINEER</Highlight></Typography>
@@ -68,7 +68,7 @@ function App() {
                               </StyledList>
                           </CardContent>
                       </Card>
-                      <Card sx={{marginTop: "20px"}}>
+                      <Card sx={{marginTop: "20px", width: "100%"}}>
                           <CardContent sx={{textAlign: "left"}}>
                               <Typography variant={"h6"} fontWeight={"bold"}>MAY 2021 – MARCH 2022</Typography>
                               <Typography variant={"h6"} fontWeight={"bold"}><Highlight>SR. SOFTWARE ENGINEER</Highlight></Typography>
@@ -80,7 +80,7 @@ function App() {
                               </StyledList>
                           </CardContent>
                       </Card>
-                      <Card sx={{marginTop: "20px"}}>
+                      <Card sx={{marginTop: "20px", width: "100%"}}>
                           <CardContent sx={{textAlign: "left"}}>
                               <Typography variant={"h6"} fontWeight={"bold"}>JUNE 2020 - MAY 2021</Typography>
                               <Typography variant={"h6"} fontWeight={"bold"}><Highlight>SOFTWARE ENGINEER</Highlight></Typography>
@@ -92,7 +92,7 @@ function App() {
                               </StyledList>
                           </CardContent>
                       </Card>
-                      <Card sx={{marginTop: "20px"}}>
+                      <Card sx={{marginTop: "20px", width: "100%"}}>
                           <CardContent sx={{textAlign: "left"}}>
                               <Typography variant={"h6"} fontWeight={"bold"}>MAY 2019 – JUNE 2020</Typography>
                               <Typography variant={"h6"} fontWeight={"bold"}><Highlight>SOFTWARE ENGINEER II</Highlight></Typography>
@@ -104,7 +104,7 @@ function App() {
                               </StyledList>
                           </CardContent>
                       </Card>
-                      <Card sx={{marginTop: "20px"}}>
+                      <Card sx={{marginTop: "20px", width: "100%"}}>
                           <CardContent sx={{textAlign: "left"}}>
                               <Typography variant={"h6"} fontWeight={"bold"}>AUGUST 2017 – MAY 2019</Typography>
                               <Typography variant={"h6"} fontWeight={"bold"}><Highlight>SOFTWARE ENGINEER I</Highlight></Typography>
@@ -116,7 +116,7 @@ function App() {
                               </StyledList>
                           </CardContent>
                       </Card>
-                      <Card sx={{marginTop: "20px"}}>
+                      <Card sx={{marginTop: "20px", width: "100%"}}>
                           <CardContent sx={{textAlign: "left"}}>
                               <Typography variant={"h6"} fontWeight={"bold"}>JUNE 2015 – AUGUST 2017</Typography>
                               <Typography variant={"h6"} fontWeight={"bold"}><Highlight>WEB DEVELOPER</Highlight></Typography>
@@ -128,11 +128,31 @@ function App() {
                       </Card>
                   </RightCol>
               </BodyContainer>
+              <Footer>
+                  <Typography variant={"h6"}>
+                      <span style={{fontWeight: "bold"}}>E&nbsp;</span>
+                      Yoxtrot@gmail.com
+                  </Typography>
+                  <Typography variant={"h6"}>
+                      <span style={{fontWeight: "bold"}}>P&nbsp;</span>
+                      (315)534-5301
+                  </Typography>
+                  <Typography variant={"h6"}>
+                      <span style={{fontWeight: "bold"}}>L&nbsp;</span>
+                      Denver, CO.
+                  </Typography>
+              </Footer>
           </Paper>
       </Container>
     </div>
   );
 }
+
+const Footer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+`
 
 const ColumnItem = styled.div`
   display: flex;
